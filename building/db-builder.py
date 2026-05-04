@@ -15,7 +15,7 @@ log(files)
 print("We have " + str(len(files)) + " files to process.")
 
 for file in files:
-    if file.endswith("NL.vtt"):
+    if file.endswith(".vtt"):
         print("We lubaching: " + file)
         for caption in webvtt.read('lubach/' + file):
             log(f"From: {caption.start} To: {caption.end}")

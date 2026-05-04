@@ -1,0 +1,17 @@
+[
+    {
+        "file": "full.json",
+        "name": "Alles op het yt kanaal",
+        "id": "alles"
+    },
+    {
+        "file": "ddd.json",
+        "name": "Diep duik donderdag",
+        "id": "ddd"
+    },
+    {
+        "file": "qa.json",
+        "name": "Q&Arjen",
+        "id": "qarjen"
+    }
+]
