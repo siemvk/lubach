@@ -60,7 +60,7 @@ function render() {
         // https://youtu.be/xpedFIZFmhc?t=30
         resultElement.innerHTML = `
                         ${result.text} ${"  -   "} <a href="https://www.youtube.com/watch?v=${result.video}&t=${turnTimeToSeconds(result.start)}" target="_blank">Bekijk op YouTube</a>
-                        ${downloadServerOnline ? `${"  -   "} <a href="http://localhost:8080/download/${result.video}/${turnTimeToSeconds(result.start)}/${turnTimeToSeconds(result.end)}" target="_blank">Video</a> ${"  -   "} <a href="http://localhost:8080/download/${result.video}/${turnTimeToSeconds(result.start)}/${turnTimeToSeconds(result.end)}" target="_blank">Audio</a>` : ""}
+                        ${downloadServerOnline ? `${"  -   "} <a href="http://localhost:8080/download/${result.video}/${turnTimeToSeconds(result.start)}/${turnTimeToSeconds(result.end)}" target="_blank">Video</a> ${"  -   "} <a href="http://localhost:8080/audio/${result.video}/${turnTimeToSeconds(result.start)}/${turnTimeToSeconds(result.end)}" target="_blank">Audio</a>` : ""}
             `;
         container.appendChild(resultElement);
     });
